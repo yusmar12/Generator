@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Ejemplo sencillo de AJAX</title>
+
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+    <body>
+    <div class="container">
+        <h1>Generator</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                    <label> Fila inicial </label>
+                    <input autofocus type="text" name="caja_texto" id="row_num" value="" required/> 
+            </div>
+            <div class="col-sm-4">
+                <label> Fila Final </label>
+                <input type="text" name="caja_texto" id="row_final" value="" required/> 
+            </div>
+            <div class="col-sm-4">
+                <input class="btn btn-success btn-generar" type="button" id="send" href="javascript:;" onclick="generate();" value="Calcula"/>
+            </div>            
+        </div>
+        <div class="row boton">
+
+            <div class="col-sm-4">
+                <input type="button" id="getfile" class="getfile btn btn-primary" href="javascript:;" onclick="getFile();return false;" value="Descargar CSV" />
+            </div>
+            <div class="col-sm-4">
+                <input type="button" id="reset_values" class=" btn btn-warning reset_values" href="javascript:;" onclick="resetParameters();return false;" value="Resetear resultados" />
+            </div>
+            <div class="col-sm-4">
+                <input type="button" id="get_errors" class="btn btn-outline-dark get_errors" href="javascript:;" onclick="getErrors();return false;" value="Descargar errores" />
+            </div>            
+        </div> 
+        
+        <div class="row">
+            <center>
+                <div class="loading_img" style="display:none"> 
+                    <img src="./img/gif5.gif" alt=""> <br>
+                    <label for="">loading...</label>
+                </div>
+                <div class="img_success" style="display:none">
+                    <img class="img_success_c" src="./img/success.png" alt="">
+                </div>
+            </center>
+            <div>
+                <audio class="audio" src="./files/Beep.mp3"></audio>
+            </div>                
+        </div>
+    </div>
+    <script src="./js/functions.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script src="./js/FileSaver.js"></script>
+    <script src="./js/moment.js"></script>
+    </body>
+</html>
