@@ -2,7 +2,7 @@
 Get results from a prediction model
 
 
-Es importante mencionar algunos detalles que mencionar y que faltaron a esta versión del proyecto
+Es importante mencionar algunos detalles que faltaron a esta versión del proyecto
 
 1. Es necesario actualizar el token cada hora. Se colocó un audio que se reproduce cada vez que hay un error. Cuando este suena de forma consecutiva es porque el token ya caducó. Fue una forma sencilla para controlar ese detalle.
 2. El archivo que genera al final no queda en formato correcto. Pues el formato correcto CSV es de la siguiente forma:
