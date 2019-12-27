@@ -2,14 +2,14 @@
 Get results from a prediction model
 
 
-Es importante mencionar algunos detalles que faltaron a esta versión del proyecto
+It is important, some details that were missing from this version of the project
 
-1. Es necesario actualizar el token cada hora. Se colocó un audio que se reproduce cada vez que hay un error. Cuando este suena de forma consecutiva es porque el token ya caducó. Fue una forma sencilla para controlar ese detalle.
-2. El archivo que genera al final no queda en formato correcto. Pues el formato correcto CSV es de la siguiente forma:
+1. It is necessary to update the token every hour. An audio was played that plays every time there is an error. When this sounds consecutively it is because the token has already expired. It was a simple way to control that detail.
+2. The file it generates at the end is not in the correct format. Well, the correct CSV format is as follows:
           titulo1,titulo2,titulo3,titulo4,titulo5
           dato1,"dato2","dato3","dato4","dato5"
           dato1,"dato2","dato3","dato4","dato5"
-   Pero el codigo lo exporta de la siguiente forma (sin títulos y en el siguiente formato)
+   But the code exports it in the following way (without titles and in the following format)
           dato1,"dato2","dato3","dato4","dato5",
           ,dato1,"dato2","dato3","dato4","dato5",
-   Se quizo hacer script en PHP que solucionara esto, pero no se logró (ese código está en getFile.php) 
+   It was intended to do a PHP script to solve this, but it was not achieved (that code is in getFile.php)
